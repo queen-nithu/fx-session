@@ -99,6 +99,10 @@ app.get('/pair', async (req, res) => {
 })
 
 async function startnigg(phone) {
+  const authDir = path.join(__dirname, 'auth');
+  if (!fs.existsSync(authDir)) {
+    fs.mkdirSync(authDir);
+  }
   return new Promise(async (resolve, reject) => {
     try {
       if (!fs.existsSync(sessionFolder)) {
