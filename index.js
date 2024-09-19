@@ -163,7 +163,7 @@ async function startnigg(phone) {
           await negga.sendMessage(
             negga.user.id,
             {
-              text: '\nsᴇssɪᴏɴ sᴄᴀɴ sᴜᴄᴄᴇss\n',
+              text: '\nsession connecte sucsess',
             },
             { quoted: guru }
           )
